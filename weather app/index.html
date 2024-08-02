@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="big_container">
+        <div class="heading">
+            <h1>Weather</h1>
+            <input id="city" type="text" placeholder=" enter city name" autocomplete="off" autofocus >
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="loc"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="main-container">
+            <img src="/weather app/icons/cloudy.png" alt="weather dipiction" class="weather_image">
+            <div class="sleeping describe" id="describe">
+                <h3>Forecast: </h3>
+                <h3 id="description"> Will be described</h3>
+                </div>
+            <div class="info">
+             <div class="sleeping temp_shift" id="Temprature_Value">
+            <h1 class="value" id="temp">XX</h1>
+            <h1 id="units"> °C </h1>
+            <button class="temp_convertor"><i class="fa-solid fa-temperature-three-quarters"></i></button><p> click to<br/>convert units</p>
+            </div>
+             <div class="sleeping" id="Display_place">
+             <h2 class="place">Place</h2>
+             <button class="fav"><i id="heart" class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="components">
+                <div class="humid">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="Humidity">XX</p>
+                    <p>Humidity(%)</p>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="windspeed">XX</p>
+                    <p>Wind_Speed</p>
+                    <p>(km/h)</p>
+                </div>
+            </div>
+            <div id="favs">
+                <h4>Favourites:-</h4>
+                <ul id="favorites_list"></ul>
+                <button id="clear"><h4>Clear All</h4></button>
+            </div>
+            
+        </div>
+            
+        </div>
+        
+    </div>
+<script src="logic.js"></script>
+
+</body>
+</html>
