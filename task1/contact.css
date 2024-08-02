@@ -1,0 +1,59 @@
+#forms{
+    
+    margin: 0;
+    padding: 0;
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+body{
+    background-image: url('bg.png');
+    background-size:cover;
+    
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    bottom:80px;
+    left:10px;
+}
+
+form *{
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    font-size: large;
+    align-self: center;
+    align-items: center;
+
+}
+
+p{
+    font-size: medium;
+}
+#submit{
+    position: relative;
+    left:65px;
+}
+
+.contact_heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:50px;
+}
+#feedback{
+    
+}
+@media  screen and (max-width:786px)
+{
+ .contact_heading{
+    font-size:25px;
+ }
+ main{
+    position:relative;
+    top:60px;
+    margin-left:0px;
+ }
+}

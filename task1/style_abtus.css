@@ -1,0 +1,76 @@
+#first_half{
+    display:flex;
+}
+#second_half{
+    display:flex;
+    position: relative;
+    left:200px;
+    bottom:110px;
+}
+
+#left_side{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    position: relative;
+    left:180px;
+    bottom:30px;
+    margin: 0;
+    padding: 0;
+}
+#left_side ul{
+    position:relative;
+    right:20px;
+}
+#right_side{
+    position:absolute;
+    top:70px;
+    left:900px;
+    border: solid rgb(255, 140, 0) 2px;
+    border-radius: 25px 0px;
+
+}
+#menu{
+    position: relative;
+    bottom:80px;
+}
+#btable{
+    position: relative;
+    bottom:120px;
+    left:130px;
+
+}
+main{
+    display:flex;
+    margin:0;
+    padding:0;
+    
+}
+.chef_heading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+@media only screen and (max-width:786px)
+{
+    #left_side{
+        position:absolute;
+        left:10px;
+    
+
+    }
+    #right_side{
+        position:absolute;
+        left:280px;
+        top:140px;
+        height: 100px;
+        
+
+    }
+    .r_img{
+        height:100px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+}
